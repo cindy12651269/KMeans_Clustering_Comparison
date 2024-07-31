@@ -1,6 +1,23 @@
 # K-Means Clustering Example
 This project demonstrates the use of the K-Means clustering algorithm on a simple 2D dataset. It includes calculating the optimal number of clusters using the Elbow Method and visualizing the clustering results.
 
+# Code Explanation
+The provided code performs the following steps:
+
+## 1. Data Preparation
+- Define a simple 2D dataset.
+- Display the original data in a tabular format.
+## 2. Calculate SSE for Different k Values
+- Loop through different values of k (3, 4, 5).
+- Perform K-Means clustering for each k value.
+- Calculate and store the Sum of Squared Errors (SSE) for each k.
+## 3. Plot the Elbow Method Graph
+- Plot the number of clusters (k) vs. SSE to visualize the Elbow Method.
+- The "elbow" point on this graph helps determine the optimal number of clusters.
+## 4. Visualize Clustering Results
+- Define a function plot_clusters to visualize the clustering results for a given k.
+- Plot the clustering results for k = 3, k = 4, and k = 5.
+
 ## Sample Code
 ```python
 import numpy as np
